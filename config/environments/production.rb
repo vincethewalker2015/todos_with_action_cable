@@ -83,4 +83,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.web_socket_server_url = "wss://realtime-vin.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://realtime-vin.herokuapp.com', 'http://realtime-vin.herokuapp.com']
 end
