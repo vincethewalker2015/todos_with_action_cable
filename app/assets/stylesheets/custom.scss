@@ -45,6 +45,7 @@ textarea {
 
  .main_txt {
   color: #8B0000 !important ;
+  padding-left: 15px;
 }
 
 .btn {
@@ -60,6 +61,16 @@ textarea {
 
 .fancy:hover {
   background-color: #CBD1DC;
+  color: white;
+}
+
+.purple {
+  background-color: #ac00e6;
+  color: white;
+}
+
+.purple:hover {
+  background-color: #ecb3ff;
   color: white;
 }
 

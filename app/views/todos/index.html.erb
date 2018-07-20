@@ -8,6 +8,7 @@
           <%= link_to "Users", users_path(@users), class: "btn btn-primary bttn" %>
           <% if logged_in? &&  current_user.admin? %>
             <%= link_to "Owners", owners_path(@owners), class: "btn btn-default fancy bttn" %>
+            <%= link_to "Chat", chat_path(current_user), class: "btn btn-default purple bttn" %>
           <% end %>
         </p>
            <div align="center">
