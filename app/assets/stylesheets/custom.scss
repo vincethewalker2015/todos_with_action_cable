@@ -168,6 +168,14 @@ textarea {
  
 }
 
+/* Message Section */
+.messages {
+  border: 1px solid #eaeaea;
+  height: 20em;
+  position: relative;
+  overflow: auto;
+}
+
 /*.check_box {
    margin-left: 10px;
 }

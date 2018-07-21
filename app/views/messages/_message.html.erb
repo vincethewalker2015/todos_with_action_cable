@@ -1,5 +1,6 @@
 
-  <div class="message well well-sm">
+<div class="col-md-6 col-md-offset-3 ">
+  <div class="message  well well-sm">
   <p>
     <small><em>Created <%= time_ago_in_words(message.created_at) %> ago</em></small> <br />
     <strong><%= message.user.name.capitalize %>: </strong>
@@ -7,4 +8,5 @@
       <%= message.content %>
     </span>
   </p>
+</div>
 </div>
