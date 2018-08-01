@@ -176,6 +176,21 @@ textarea {
   overflow: auto;
 }
 
+.message-container {
+  .form-control {
+    float: left;
+    width: 70%;
+    margin-left: 20px;
+  }
+  .btn {
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    height: 80% !important;
+    width: 18%;
+  }
+}
+
 /*.check_box {
    margin-left: 10px;
 }
