@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180720160031) do
+ActiveRecord::Schema.define(version: 2018_07_20_160031) do
 
   create_table "comments", force: :cascade do |t|
-    t.text     "description"
-    t.integer  "user_id"
-    t.integer  "todo_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.text "description"
+    t.integer "user_id"
+    t.integer "todo_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "messages", force: :cascade do |t|
-    t.text     "content"
-    t.integer  "user_id"
+    t.text "content"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -37,18 +37,18 @@ ActiveRecord::Schema.define(version: 20180720160031) do
   end
 
   create_table "todos", force: :cascade do |t|
-    t.string  "name"
-    t.text    "description"
+    t.string "name"
+    t.text "description"
     t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
-    t.string   "password_digest"
-    t.boolean  "admin",           default: false
+    t.string "name"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "password_digest"
+    t.boolean "admin", default: false
   end
 
 end
